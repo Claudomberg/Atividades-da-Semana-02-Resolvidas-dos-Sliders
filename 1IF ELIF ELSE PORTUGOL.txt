@@ -1,0 +1,17 @@
+inteiro idade
+real renda
+
+escreva("Digite a idade: ")
+leia(idade)
+escreva("Digite a renda: ")
+leia(renda)
+
+se (renda >= 10000 e idade >= 18) {
+    escreva("Classificação: Diamante")
+} senao se (renda >= 5000) {
+    escreva("Classificação: Ouro")
+} senao se (renda >= 2000) {
+    escreva("Classificação: Prata")
+} senao {
+    escreva("Classificação: Bronze")
+}

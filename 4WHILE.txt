@@ -1,0 +1,20 @@
+cadeia senha_cadastrada = "python123"
+cadeia senha = ""
+inteiro tentativas = 0
+logico bloqueado = falso
+
+enquanto (senha != senha_cadastrada e tentativas < 3) {
+    escreva("Digite a senha: ")
+    leia(senha)
+    tentativas++
+
+    se (senha == senha_cadastrada) {
+        escreva("Acesso liberado!\n")
+    } senao se (tentativas == 3) {
+        bloqueado = verdadeiro
+    }
+}
+
+se (bloqueado) {
+    escreva("Sistema bloqueado após 3 erros.\n")
+}
